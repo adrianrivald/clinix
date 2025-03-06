@@ -10,6 +10,9 @@ import { Listbox, Transition } from "@headlessui/react";
 import { ArrowDownIcon } from "../../../components/iconsComponent";
 import { SearchBox } from "../../../components/uiComponent/searchBox";
 import { useSearchDebounce } from "../../../helpers/hooks";
+import GoogleMap from "../../../components/uiComponent/googleMap";
+import MapComponent from "../../../components/uiComponent/map";
+import MapboxComponent from "../../../components/uiComponent/mapGl";
 
 interface SelectProps {
   label: string;
@@ -1333,6 +1336,8 @@ export function IdentityForm() {
           </Card>
         </form>
       </div>
+      {/* <MapboxComponent /> */}
+      <MapComponent />
     </div>
   );
 }
