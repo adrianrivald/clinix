@@ -137,10 +137,10 @@ export function Router() {
       path: "/registration/summary/finish",
       element: <SignUpSummaryFinishPage />,
     },
-    {
-      path: "/login",
-      element: <SignInPage />,
-    },
+    // {
+    //   path: "/login",
+    //   element: <SignInPage />,
+    // },
     {
       path: "/forgot-password",
       element: <ForgotPasswordPage />,

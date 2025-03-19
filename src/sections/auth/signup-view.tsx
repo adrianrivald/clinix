@@ -227,13 +227,15 @@ export function SignupContent() {
                 />
                 Daftar dengan Google
               </button>
-              <div
-                onClick={() => navigate("/login")}
-                className="mt-4 text-center cursor-pointer"
-              >
+              <div className="mt-4 text-center cursor-pointer">
                 <span>
                   Sudah memiliki akun?{" "}
-                  <span className="underline text-[#037EFF]">Masuk</span>
+                  <a
+                    href="https://memos-fe-dashboard.vercel.app/login"
+                    className="underline text-[#037EFF]"
+                  >
+                    Masuk
+                  </a>
                 </span>
               </div>
             </Card>

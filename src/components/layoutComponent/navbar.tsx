@@ -75,7 +75,6 @@ function UserAccount({
 interface NavMenuDesktopProps {
   isLoggedIn: boolean;
   onClickLogo: () => void;
-  onClickToLogin: () => void;
   setIsExpandedMenubar: Dispatch<SetStateAction<boolean>>;
   handleLogout: () => void;
   me: User | undefined;
@@ -85,7 +84,6 @@ interface NavMenuDesktopProps {
 function NavMenuDesktop({
   isLoggedIn,
   onClickLogo,
-  onClickToLogin,
   // setIsExpandedMenubar,
   handleLogout,
   me,
@@ -142,7 +140,9 @@ function NavMenuDesktop({
             ) : (
               <div id="right" className="hidden lg:flex gap-3 items-center">
                 <span>Sudah memiliki akun?</span>
-                <Button isClinix title="Masuk" onClick={onClickToLogin} />
+                <a href="https://memos-fe-dashboard.vercel.app/login">
+                  <Button isClinix title="Masuk" />
+                </a>
               </div>
             )}
           </>
@@ -170,10 +170,6 @@ export function Navbar({
     navigate("/");
   };
 
-  const onClickToLogin = () => {
-    navigate("/login");
-  };
-
   React.useEffect(() => {
     setOpen(false);
   }, [pathname]);
@@ -187,7 +183,6 @@ export function Navbar({
       <NavMenuDesktop
         isLoggedIn={isAuth}
         onClickLogo={onClickLogo}
-        onClickToLogin={onClickToLogin}
         setIsExpandedMenubar={setIsExpandedMenubar}
         handleLogout={handleLogout}
         me={me}
