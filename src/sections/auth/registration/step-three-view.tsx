@@ -888,7 +888,10 @@ export function ProfesionForm() {
                             <Listbox
                               value={field.value}
                               onChange={(val) => {
-                                setFormData({ facility_province: val?.id });
+                                setFormData({
+                                  facility_province: val?.id,
+                                  facility_province_name: val?.name,
+                                });
                                 setValue("facility_province", val, {
                                   shouldValidate: true,
                                 });
@@ -985,7 +988,10 @@ export function ProfesionForm() {
                             <Listbox
                               value={field.value}
                               onChange={(val) => {
-                                setFormData({ facility_city: val?.id });
+                                setFormData({
+                                  facility_city: val?.id,
+                                  facility_city_name: val?.name,
+                                });
                                 setValue("facility_city", val, {
                                   shouldValidate: true,
                                 });
@@ -1082,7 +1088,10 @@ export function ProfesionForm() {
                             <Listbox
                               value={field.value}
                               onChange={(val) => {
-                                setFormData({ facility_sub_district: val?.id });
+                                setFormData({
+                                  facility_sub_district: val?.id,
+                                  facility_sub_district_name: val?.name,
+                                });
                                 setValue("facility_sub_district", val, {
                                   shouldValidate: true,
                                 });
@@ -1179,7 +1188,10 @@ export function ProfesionForm() {
                             <Listbox
                               value={field.value}
                               onChange={(val) => {
-                                setFormData({ facility_village: val?.id });
+                                setFormData({
+                                  facility_village: val?.id,
+                                  facility_village_name: val?.name,
+                                });
                                 setValue("facility_village", val, {
                                   shouldValidate: true,
                                 });

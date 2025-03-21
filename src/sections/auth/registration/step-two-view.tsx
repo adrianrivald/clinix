@@ -743,7 +743,10 @@ export function IdentityForm() {
                         <Listbox
                           value={field.value}
                           onChange={(val) => {
-                            setFormData({ province: val?.id });
+                            setFormData({
+                              province: val?.id,
+                              province_name: val?.name,
+                            });
                             setValue("province", val, {
                               shouldValidate: true,
                             });
@@ -845,7 +848,10 @@ export function IdentityForm() {
                         <Listbox
                           value={field.value}
                           onChange={(val) => {
-                            setFormData({ city: val?.id });
+                            setFormData({
+                              city: val?.id,
+                              city_name: val?.name,
+                            });
                             setValue("city", val, {
                               shouldValidate: true,
                             });
@@ -951,7 +957,10 @@ export function IdentityForm() {
                         <Listbox
                           value={field.value}
                           onChange={(val) => {
-                            setFormData({ sub_district: val?.id });
+                            setFormData({
+                              sub_district: val?.id,
+                              sub_district_name: val?.name,
+                            });
                             setValue("sub_district", val, {
                               shouldValidate: true,
                             });
@@ -1056,7 +1065,10 @@ export function IdentityForm() {
                         <Listbox
                           value={field.value}
                           onChange={(val) => {
-                            setFormData({ village: val?.id });
+                            setFormData({
+                              village: val?.id,
+                              village_name: val?.name,
+                            });
                             setValue("village", val, {
                               shouldValidate: true,
                             });
