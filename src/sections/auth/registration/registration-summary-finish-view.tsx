@@ -11,11 +11,8 @@ export function SummaryFinishContent() {
     navigate("/");
   };
   return (
-    <div
-      id="summary"
-      className={twMerge("mb-24 p-4 lg:p-16", "max-w-[80rem] mx-auto")}
-    >
-      <div className="lg:mx-36">
+    <div id="summary" className={twMerge("mb-24 p-4", "max-w-[560px] mx-auto")}>
+      <div>
         <div>
           <Card>
             <div className="text-center">
@@ -26,10 +23,10 @@ export function SummaryFinishContent() {
                 alt="finish"
                 className="mx-auto"
               />
-              <h2 className="font-bold text-[18px] lg:text-[30px]">
+              <h2 className="font-bold text-[18px] lg:text-[24px]">
                 Permintaan Berlangganan Telah Dikirim!
               </h2>
-              <h3 className="mt-2 text-[14px] lg:text-base">
+              <h3 className="mt-2 text-[14px]">
                 Terima kasih! Kami telah menerima permintaan Anda.
               </h3>
             </div>

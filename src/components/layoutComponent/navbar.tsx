@@ -110,8 +110,8 @@ function NavMenuDesktop({
           )}
           <img
             src="/assets/logo/logo-memos.png"
-            width={112}
-            height={32}
+            width={140}
+            height={36}
             alt="logo-memos"
             onClick={onClickLogo}
             className="cursor-pointer"

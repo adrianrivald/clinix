@@ -166,7 +166,7 @@ export function SignupContent() {
                           },
                         })}
                         type="email"
-                        className={`rounded-md p-4 border border-neutral-100 focus:outline-none ${
+                        className={`text-[14px] rounded-md p-[10px] border border-neutral-100 focus:outline-none ${
                           (formState?.errors?.email ||
                             isShouldRequestOtp ||
                             isShowLoginMessage) &&

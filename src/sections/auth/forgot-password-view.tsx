@@ -121,7 +121,7 @@ export function ForgotPasswordContent() {
                         id="email"
                         {...register("email", { required: true })}
                         type="email"
-                        className="rounded-md p-4 border border-neutral-100 focus:outline-none"
+                        className="text-[14px] rounded-md p-4 border border-neutral-100 focus:outline-none"
                         placeholder="Masukkan Email Anda"
                       />
                     </div>
