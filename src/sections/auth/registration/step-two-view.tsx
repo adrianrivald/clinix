@@ -268,7 +268,10 @@ export function IdentityForm() {
   return (
     <div
       id="terms-condition"
-      className={twMerge("mb-24 p-4 lg:p-16", "max-w-[1200rem] mx-auto")}
+      className={twMerge(
+        "mb-24 p-[10px] text-[14px] lg:p-16",
+        "max-w-[1200rem] mx-auto"
+      )}
     >
       <div className="lg:mx-36">
         <form ref={form} onSubmit={handleSubmit(onSubmit)}>
@@ -306,7 +309,7 @@ export function IdentityForm() {
                       <span className="text-warning">*</span>
                     </label>
                     <div
-                      className={`relative rounded-[8px] p-4 border border-neutral-100 flex items-center gap-2 ${
+                      className={`relative rounded-[8px] p-[10px] text-[14px] border border-neutral-100 flex items-center gap-2 ${
                         formState.errors?.identity_number
                           ? "border-primary-500"
                           : "border-neutral-100"
@@ -359,7 +362,7 @@ export function IdentityForm() {
                       <span className="text-warning">*</span>
                     </label>
                     <div
-                      className={`relative rounded-[8px] p-4 border border-neutral-100 flex items-center gap-2 ${
+                      className={`relative rounded-[8px] p-[10px] text-[14px] border border-neutral-100 flex items-center gap-2 ${
                         formState.errors?.identity_photo
                           ? "border-primary-500"
                           : "border-neutral-100"
@@ -423,7 +426,7 @@ export function IdentityForm() {
                         },
                       })}
                       type="text"
-                      className={`rounded-[8px] p-4 border focus:outline-none ${
+                      className={`rounded-[8px] p-[10px] text-[14px] border focus:outline-none ${
                         formState?.errors?.full_name
                           ? "border-primary-500"
                           : "border-neutral-100"
@@ -472,7 +475,7 @@ export function IdentityForm() {
                         >
                           <div className="relative">
                             <Listbox.Button
-                              className={`border relative w-full cursor-default rounded-md bg-white py-4 pl-4 pr-10 text-left focus:outline-none ${
+                              className={`border relative w-full cursor-default rounded-md bg-white p-[10px] text-[14px] text-left focus:outline-none ${
                                 formState?.errors?.gender
                                   ? "border-primary-500"
                                   : "border-neutral-100"
@@ -557,7 +560,7 @@ export function IdentityForm() {
                         },
                       })}
                       type="text"
-                      className={`rounded-[8px] p-4 border focus:outline-none ${
+                      className={`rounded-[8px] p-[10px] text-[14px] border focus:outline-none ${
                         formState?.errors?.birth_place
                           ? "border-primary-500"
                           : "border-neutral-100"
@@ -596,7 +599,7 @@ export function IdentityForm() {
                         },
                       })}
                       type="date"
-                      className={`rounded-[8px] p-4 border focus:outline-none ${
+                      className={`rounded-[8px] p-[10px] text-[14px] border focus:outline-none ${
                         formState?.errors?.birth_date
                           ? "border-primary-500"
                           : "border-neutral-100"
@@ -627,7 +630,7 @@ export function IdentityForm() {
                     >
                       No. HP
                     </label>
-                    <div className="relative rounded-[8px] p-4 border border-neutral-100 flex items-center gap-2">
+                    <div className="relative rounded-[8px] p-[10px] text-[14px] border border-neutral-100 flex items-center gap-2">
                       <span>+62</span>
                       <input
                         id="phone_number"
@@ -666,7 +669,7 @@ export function IdentityForm() {
                     </label>
 
                     <div
-                      className={`relative rounded-[8px] p-4 border border-neutral-100 flex items-center gap-2 ${
+                      className={`relative rounded-[8px] p-[10px] text-[14px] border border-neutral-100 flex items-center gap-2 ${
                         formState.errors?.password
                           ? "border-primary-500"
                           : "border-neutral0100"
@@ -754,7 +757,7 @@ export function IdentityForm() {
                         >
                           <div className="relative">
                             <Listbox.Button
-                              className={`border relative w-full cursor-default rounded-md bg-white py-4 pl-4 pr-10 text-left focus:outline-none ${
+                              className={`border relative w-full cursor-default rounded-md bg-white p-[10px] text-[14px] text-left focus:outline-none ${
                                 formState?.errors?.province
                                   ? "border-primary-500"
                                   : "border-neutral-100"
@@ -859,7 +862,7 @@ export function IdentityForm() {
                         >
                           <div className="relative">
                             <Listbox.Button
-                              className={`border relative w-full cursor-default rounded-md bg-white py-4 pl-4 pr-10 text-left focus:outline-none ${
+                              className={`border relative w-full cursor-default rounded-md bg-white p-[10px] text-[14px] text-left focus:outline-none ${
                                 formState?.errors?.city
                                   ? "border-primary-500"
                                   : "border-neutral-100"
@@ -968,7 +971,7 @@ export function IdentityForm() {
                         >
                           <div className="relative">
                             <Listbox.Button
-                              className={`border relative w-full cursor-default rounded-md bg-white py-4 pl-4 pr-10 text-left focus:outline-none ${
+                              className={`border relative w-full cursor-default rounded-md bg-white p-[10px] text-[14px] text-left focus:outline-none ${
                                 formState?.errors?.sub_district
                                   ? "border-primary-500"
                                   : "border-neutral-100"
@@ -1076,7 +1079,7 @@ export function IdentityForm() {
                         >
                           <div className="relative">
                             <Listbox.Button
-                              className={`border relative w-full cursor-default rounded-md bg-white py-4 pl-4 pr-10 text-left focus:outline-none ${
+                              className={`border relative w-full cursor-default rounded-md bg-white p-[10px] text-[14px] text-left focus:outline-none ${
                                 formState?.errors?.village
                                   ? "border-primary-500"
                                   : "border-neutral-100"
@@ -1170,7 +1173,7 @@ export function IdentityForm() {
                         },
                       })}
                       type="text"
-                      className={`rounded-[8px] p-4 border focus:outline-none ${
+                      className={`rounded-[8px] p-[10px] text-[14px] border focus:outline-none ${
                         formState?.errors?.street_address
                           ? "border-primary-500"
                           : "border-neutral-100"
@@ -1203,7 +1206,7 @@ export function IdentityForm() {
                         id="detail_note"
                         {...register("detail_note", { required: false })}
                         type="text"
-                        className="rounded-[8px] p-4 border border-neutral-100 focus:outline-none"
+                        className="rounded-[8px] p-[10px] text-[14px] border border-neutral-100 focus:outline-none"
                         placeholder="Detail Alamat, No. Lantai"
                         onChange={(e) =>
                           setFormData({ detail_note: e.target.value })
@@ -1222,7 +1225,7 @@ export function IdentityForm() {
                         id="house_no"
                         {...register("house_no")}
                         type="text"
-                        className="rounded-[8px] p-4 border border-neutral-100 focus:outline-none"
+                        className="rounded-[8px] p-[10px] text-[14px] border border-neutral-100 focus:outline-none"
                         placeholder="No. Rumah"
                         onChange={(e) =>
                           setFormData({ house_no: e.target.value })
@@ -1252,7 +1255,7 @@ export function IdentityForm() {
                         },
                       })}
                       type="text"
-                      className={`rounded-[8px] p-4 border focus:outline-none ${
+                      className={`rounded-[8px] p-[10px] text-[14px] border focus:outline-none ${
                         formState?.errors?.postal_code
                           ? "border-primary-500"
                           : "border-neutral-100"
@@ -1284,7 +1287,7 @@ export function IdentityForm() {
                         id="rt_no"
                         {...register("rt_no", { required: false })}
                         type="text"
-                        className="rounded-[8px] p-4 border border-neutral-100 focus:outline-none"
+                        className="rounded-[8px] p-[10px] text-[14px] border border-neutral-100 focus:outline-none"
                         placeholder="Masukkan RT"
                         onChange={(e) => setFormData({ rt_no: e.target.value })}
                         defaultValue={formData["rt_no"]}
@@ -1301,7 +1304,7 @@ export function IdentityForm() {
                         id="rw_no"
                         {...register("rw_no", { required: false })}
                         type="text"
-                        className="rounded-[8px] p-4 border border-neutral-100 focus:outline-none"
+                        className="rounded-[8px] p-[10px] text-[14px] border border-neutral-100 focus:outline-none"
                         placeholder="Masukkan RW"
                         onChange={(e) => setFormData({ rw_no: e.target.value })}
                         defaultValue={formData["rw_no"]}
@@ -1317,7 +1320,7 @@ export function IdentityForm() {
                       No. Telp
                       {/* <span className="text-warning">*</span> */}
                     </label>
-                    <div className="relative rounded-[8px] p-4 border border-neutral-100 flex items-center gap-2">
+                    <div className="relative rounded-[8px] p-[10px] text-[14px] border border-neutral-100 flex items-center gap-2">
                       <span>021</span>
                       <input
                         id="telp"

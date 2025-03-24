@@ -126,18 +126,15 @@ export function SummaryContent() {
   };
 
   return (
-    <div
-      id="summary"
-      className={twMerge("mb-24 p-4 lg:p-16", "max-w-[80rem] mx-auto")}
-    >
-      <div className="lg:mx-36">
+    <div id="summary" className={twMerge("mb-24 p-4", "max-w-[560px] mx-auto")}>
+      <div>
         <div>
           <Card>
             <div className="text-center">
-              <h2 className="font-bold text-[18px] lg:text-[30px]">
+              <h2 className="font-bold text-[18px] lg:text-[25px]">
                 Ringkasan Pendaftaran
               </h2>
-              <h3 className="mt-2 text-[14px] lg:text-base">
+              <h3 className="mt-2 text-[14px]">
                 Pastikan semua data di bawah ini sudah benar sebelum
                 melanjutkan:
               </h3>
@@ -334,7 +331,7 @@ export function SummaryContent() {
                 isClinix
                 isPrimary={false}
                 title="Edit Data"
-                className="w-full"
+                className="w-full text-base"
               />
               <Button
                 isDisabled={!isChecked}
@@ -342,7 +339,7 @@ export function SummaryContent() {
                 isPrimary
                 onClick={onFinishRegistration}
                 title="Kirim Permintaan Berlangganan"
-                className="w-full"
+                className="w-full text-base"
               />
             </div>
           </Card>
