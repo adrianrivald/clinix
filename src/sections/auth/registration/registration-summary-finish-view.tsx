@@ -58,7 +58,7 @@ export function SummaryFinishContent() {
               <span className="block mt-2">
                 Tim kami, akan memverifikasi permintaan Anda. Tunggu email
                 konfirmasi dalam 15 menit – 2 jam. Jika belum diterima, cek spam
-                atau hubungi kami di 08979075890
+                atau hubungi kami di 085173150717
               </span>
             </div>
             <div className="border-t-2 border-dashed border-neutral-400 w-full h-1 mt-8"></div>

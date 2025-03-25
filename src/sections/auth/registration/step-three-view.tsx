@@ -1321,7 +1321,7 @@ export function ProfesionForm() {
                         )}
                       </div>
                       <div className="flex flex-col md:flex-row items-center gap-2 lg:w-full">
-                        <div className="w-full flex flex-col gap-2">
+                        {/* <div className="w-full flex flex-col gap-2">
                           <label
                             className="text-[14px] font-medium"
                             htmlFor="facility_detail_note"
@@ -1343,7 +1343,7 @@ export function ProfesionForm() {
                             }
                             defaultValue={formData["facility_detail_note"]}
                           />
-                        </div>
+                        </div> */}
                         <div className="w-full flex flex-col gap-2">
                           <label
                             className="text-[14px] font-medium"

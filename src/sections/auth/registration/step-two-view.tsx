@@ -636,7 +636,7 @@ export function IdentityForm() {
                         id="phone_number"
                         {...register("phone_number", {
                           pattern: {
-                            value: /^8\d{10,14}$/,
+                            value: /^8\d{8,14}$/,
                             message: "Pastikan format Nomor HP sesuai",
                           },
                         })}
@@ -1195,7 +1195,7 @@ export function IdentityForm() {
                     )}
                   </div>
                   <div className="flex flex-col md:flex-row items-center gap-2 lg:w-full">
-                    <div className="w-full flex flex-col gap-2">
+                    {/* <div className="w-full flex flex-col gap-2">
                       <label
                         className="text-[14px] font-medium"
                         htmlFor="detail_note"
@@ -1213,7 +1213,7 @@ export function IdentityForm() {
                         }
                         defaultValue={formData["detail_note"]}
                       />
-                    </div>
+                    </div> */}
                     <div className="w-full flex flex-col gap-2">
                       <label
                         className="text-[14px] font-medium"
